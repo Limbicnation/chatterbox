@@ -179,7 +179,7 @@ class ChatterboxTTS:
 
         return cls.from_local(Path(local_path).parent, device)
 
-    def prepare_conditionals(self, wav_fpath, exaggeration=0.5):
+    def prepare_conditionals(self, wav_fpath, exaggeration=0.3):
         ## Load reference wav
         s3gen_ref_wav, _sr = librosa.load(wav_fpath, sr=S3GEN_SR)
 
@@ -209,8 +209,8 @@ class ChatterboxTTS:
         self,
         text,
         audio_prompt_path=None,
-        exaggeration=0.5,
-        cfg_weight=0.5,
+        exaggeration=0.3,
+        cfg_weight=0.3,
         temperature=0.8,
     ):
         if audio_prompt_path:
