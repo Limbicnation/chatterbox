@@ -1,0 +1,7 @@
+Hello everyone. I've released a new version of the Comfy UI Depth Estimation node.
+
+This update integrates the new Depth Anything V3 models, specifically the Small and Base versions, for improved depth quality.
+
+I've also verified that video processing works correctly with batch inputs, and improved the installation process to handle dependencies more reliably.
+
+You can update the node now, via the Comfy UI Manager.
