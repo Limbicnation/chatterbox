@@ -60,6 +60,13 @@ ta.save("test-2.wav", wav, model.sr)
 ```
 See `example_tts.py` and `example_vc.py` for more examples.
 
+### Transcript Synthesis
+To synthesize a full transcript with enhanced quality settings:
+```bash
+python synthesize_transcript.py
+```
+This script uses `refined_transcript.txt` and `output_first_15_seconds.wav` (if available) to generate a high-quality voiceover.
+
 # Acknowledgements
 - [Cosyvoice](https://github.com/FunAudioLLM/CosyVoice)
 - [Real-Time-Voice-Cloning](https://github.com/CorentinJ/Real-Time-Voice-Cloning)
